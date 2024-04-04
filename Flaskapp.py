@@ -41,7 +41,7 @@ X_train, X_test, y_train, y_test = train_test_split(X_scaled, y_scaled, test_siz
 # Load the model
 model = load_model("my_model.keras")
 
-@app.route('/')
+@app.route('/predict_AQI')
 def predict_aqi():
     # Prepare the input data for prediction
     num_predictions = 1
