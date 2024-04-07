@@ -4,4 +4,4 @@ automatic_scaling:
   max_instances: 10
 cpu_utilization:
   target_utilization: 0.5
-  instance_class: f2
+instance_class: f2
