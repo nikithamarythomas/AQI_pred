@@ -1,13 +1,8 @@
 runtime: python39
-
 env: flex
-
-entrypoint: gunicorn -b :$PORT main:app
-
 automatic_scaling:
-  min_idle_instances: 1
-  max_idle_instances: 10
+  min_num_instances: 1
+  max_num_instances: 20
+  cool_down_period_sec: 60
   cpu_utilization:
-    target_utilization: 0.5
-
-instance_class: f2
+    target_utilization: 0.65
