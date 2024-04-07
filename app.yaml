@@ -5,8 +5,8 @@ env: flex
 entrypoint: gunicorn -b :$PORT main:app
 
 automatic_scaling:
-  min_instances: 1
-  max_instances: 10
+  min_idle_instances: 1
+  max_idle_instances: 10
   cpu_utilization:
     target_utilization: 0.5
 
