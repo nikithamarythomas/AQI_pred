@@ -1,7 +1,7 @@
 runtime: python39
 automatic_scaling:
-min_instances: 1
-max_instances: 10
+  min_instances: 1
+  max_instances: 10
 cpu_utilization:
   target_utilization: 0.5
-instance_class: f2
+  instance_class: f2
