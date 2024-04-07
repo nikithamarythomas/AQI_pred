@@ -4,3 +4,4 @@ entrypoint: gunicorn -b :$PORT main:app
 automatic_scaling:
   target_concurrency: 10
 instance_class: f2
+
