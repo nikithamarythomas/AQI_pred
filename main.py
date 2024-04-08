@@ -43,8 +43,7 @@ model = load_model("my_model.keras")
 
 @app.route('/')
 def home():
-    return render_template('index.html')
-
+    return "Hi"
 @app.route('/predict_aqi')
 def predict_aqi():
     # Prepare the input data for prediction
