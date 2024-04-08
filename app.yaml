@@ -1,7 +1,7 @@
 runtime: python39
 env: flex
 entrypoint: gunicorn -b :$PORT main:app
-instance_class: F4_32G
+instance_class: f8
 
 
 
