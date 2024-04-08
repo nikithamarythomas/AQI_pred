@@ -1,7 +1,11 @@
 runtime: python39
-env: flex
-entrypoint: gunicorn -b :$PORT main:app
-instance_class: F4_1G
+api_version: 1
+threadsafe: true
+handlers:
+  - url: /.*
+    script: main.app
 
-
+libraries:
+  - name: flask
+    path: 0.12
 
