@@ -1,6 +1,9 @@
 runtime: python39
 env: flex
 entrypoint: gunicorn -b :$PORT main:app
-instance_class: f4
+resources:
+  memory_gb: 8
+instance_class: e2-highmem-8
+
 
 
